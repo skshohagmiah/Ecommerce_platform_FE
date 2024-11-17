@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function FeaturesSection() {
-  const [activeTab, setActiveTab] = useState('store')
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_activeTab, setActiveTab] = useState('store')
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null)
 
   const features = {
@@ -81,16 +82,16 @@ export default function FeaturesSection() {
           className="mx-auto max-w-6xl"
           onValueChange={setActiveTab}
         >
-          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto bg-white/50 backdrop-blur-sm p-1 rounded-full border border-gray-200">
+          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto bg-white/50 backdrop-blur-sm -p-2 rounded-full border border-gray-200">
             <TabsTrigger 
               value="store"
-              className="rounded-full px-8 py-3 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-purple-600 data-[state=active]:text-white"
+              className="rounded-full px-8 py-2 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-purple-600 data-[state=active]:text-white"
             >
               Store Management
             </TabsTrigger>
             <TabsTrigger 
               value="inventory"
-              className="rounded-full px-8 py-3 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-purple-600 data-[state=active]:text-white"
+              className="rounded-full px-8 py-2 transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-primary data-[state=active]:to-purple-600 data-[state=active]:text-white"
             >
               Inventory Control
             </TabsTrigger>
