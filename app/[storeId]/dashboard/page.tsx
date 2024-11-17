@@ -4,7 +4,6 @@ import React from 'react'
 const StoreDashbaordPage = () => {
   return (
     <div>
-        <StoreDashboardSidebar />
     </div>
   )
 }
