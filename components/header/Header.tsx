@@ -43,7 +43,7 @@ export default function Header() {
                 </div>
                 <Dialog>
                     <DialogTrigger asChild>
-                        <Button variant="outline">Sign In</Button>
+                        <Button size={'lg'}>Sign In</Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
@@ -53,10 +53,10 @@ export default function Header() {
                             </DialogDescription>
                         </DialogHeader>
                         <div className="flex flex-col gap-4 py-4">
-                            <Button onClick={() => handleSignIn('Google')} className="w-full">
+                            <Button onClick={() => handleSignIn('Google')} className="w-full bg-blue-600 text-white hover:bg-blue-500" size={'lg'} >
                                 Sign in with Google
                             </Button>
-                            <Button onClick={() => handleSignIn('GitHub')} className="w-full">
+                            <Button onClick={() => handleSignIn('GitHub')} className="w-full" size={'lg'}>
                                 Sign in with GitHub
                             </Button>
                         </div>

@@ -46,18 +46,18 @@ export default function HeroSection() {
 
       <div className="max-w-screen-xl mx-auto p-4 relative z-10">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Build Your E-commerce Empire
+          <h1 className="mb-8 text-4xl font-bold tracking-tight max-w-[700px] mx-auto lg:leading-[1.1] text-gray-900 sm:text-6xl">
+            Build Your <span className='text-blue-600'>E_commerce Empire</span> With Ease
           </h1>
           <p className="mb-10 text-lg text-gray-600 sm:text-xl">
-            All-in-one platform to create, manage, and scale your online store. From inventory to payments, we've got you covered.
+            <span className='font-bold bg-purple-600 p-1 text-white'>All-in-one platform</span> to create, manage, and scale your online store. From inventory to payments, we've got you covered.
           </p>
           <div className="flex justify-center space-x-4">
-            <Button size="lg" className="font-semibold">
+            <Button size="lg" className="font-semibold py-6 px-12">
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="font-semibold">
+            <Button size="lg" variant="outline" className="font-semibold py-6 px-12">
               Watch Demo
             </Button>
           </div>
